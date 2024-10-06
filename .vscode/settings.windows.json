@@ -1,6 +1,13 @@
 {
-    "cmake.environment": {
-        "PATH": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64"
-    },
-    "cmake.generator": "NMake Makefiles"
+    "cmake.generator": "Ninja",
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.configureOnOpen": true,
+    "cmake.preferredGenerators": [
+        "Ninja"
+    ],
+    "cmake.configureArgs": [
+        "-DCMAKE_C_COMPILER=C:/Program Files/LLVM/bin/clang.exe",
+        "-DCMAKE_CXX_COMPILER=C:/Program Files/LLVM/bin/clang++.exe"
+    ],
+    "C_Cpp.default.intelliSenseMode": "clang-x64"
 }
