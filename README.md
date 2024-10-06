@@ -8,12 +8,12 @@ check that your environment is working correctly.
 
 # Cloud back up Environment
 
-You are recommended to use your device for programming because it is much faster, not limited on computing resources, and available offline. But you can fall back to using a codespace in the cloud if you can't work on your device.
+You are recommended to use your own device for programming because it is much faster, not limited on computing resources, and available offline. But you can fall back to using a codespace in the cloud if you can't work on your device.
 
 Please note that:
 - You should always select the **clang compiler** when prompted while you are working on IB9JHO. This ensures we are all using the same build tools.
 - Your work on a codespace will be saved even when you close it down, but they do expire after a period of time. You should
-   push your changes to the repository regularly (see the [submission section](#submission)) to avoid losing your work. 
+   push your changes to the repository regularly (see [this section](#pushing-your-changes-to-github)) to avoid losing your work. 
 - You should NOT create multiple codespaces to work on the same repository. You should create a single codespace and close/re-open it when needed.
 
 You can use github to create new codespaces and open existing ones in your web browser.
@@ -28,8 +28,17 @@ Or you can open them in vscode (which is installed on your device) if you add th
 # Check your environment works
 
 Test that your environment is working by compiling and running the C++ code in this repository found in src/main.cpp.
-Download the repository from github by entering `git clone https://github.com/Aurashk/IB9JHO-setup.git folder\to\clone\to` in the terminal in your device.
-Or you can download as a zip and extract it. Then open the folder in vscode.
+If you are not working in a codespace you should first download the repository from github by entering the following command in the terminal on your device.
+
+\* Note that you can copy the correct link from the github page by clicking the green <> Code button and going to clone > https.
+
+```
+git clone *https://github.com/repo-owner/repo-name folder\to\clone\to
+```
+
+You can also download the repository in a zip archive, but you should generally use git clone when you are working with repositories.
+
+Open the folder with Visual Studio Code and follow the instructions below.
 
 1. **Open the cmake tab** This will show you the various executable programs you can build from the source files in your project.
 2. **Check that the clang kit is selected** We will all use the same build tools in the course to avoid any confusion/compatibility issues.
@@ -51,17 +60,27 @@ Assignments are marked automatically using tests which check the output of your 
 
 <br>![running_tests](test.png)<br>
 
-# Submission
+# Pushing your changes to github
 
-You can submit an assignment by pushing (updating) to the repository with all your changes.
-You should push to the repository regulary to make sure you don't lose any work - but keep in mind that it is not easy to reverse your changes once you have pushed them.
-<br>![submit_assignment](https://github.com/Aurashk/test_vscode/assets/9390150/55b9a810-9af9-4963-9a75-eb7edb31eea9)<br>
+You should push (update) your repository on github regularly to make sure you don't lose any work. Especially if you are programming in a codespace. But keep in mind that it is not easy to reverse your changes once you have pushed them. You can also ask for feedback this way as the module tutor will have access to all the repositories.
 
-Once you have submitted your assignment and all the tests are passing you should notice the red cross will change to a green tick in 
-github. Then you can be confident your assignment is complete and your answers were correct.
+1. **Open the source control tab** This will show you all the changes you have made to the repository.
+2. **Initialise the repository** To start tracking changes in the repository.
+3. **Add a commit message** Write a summary of the changes you made.
+4. **Open the commit tab**
+5. **Commit and push** 
+6. **Check github** You should see the changes you made in the repository.
 
-**Tests are *not* passing**
-<br>![tests_not_passing_repo](https://github.com/Aurashk/test_vscode/assets/9390150/1a45c2cf-903b-4e5f-bfa2-471e28e7349d)<br>
+<br>![initialise repository](init_repo.png)<br>
+<br>![push to repository](push_to_repo.png)<br>
+
+# Submitting Assignments
+
+Once you have pushed to your repository for your final submission with all the tests passing you should notice the red cross will change to a green tick in 
+github. Then you can be confident your assignment is complete and your answers were correct. 
+
+**Tests are *not* passing yet**
+<br>![tests_not_passing_repo](test_not_passing.png)<br>
 
 **Tests are passing**
 <br>![tests_passing_in_repo](https://github.com/Aurashk/test_vscode/assets/9390150/2c339c18-a7e3-4183-bcf5-8a1299e4b9e9)<br>
