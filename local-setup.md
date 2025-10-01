@@ -1,6 +1,6 @@
 # Setting Up a Local IB9JHO Environment for C++ Programming
 
-This is a guide to set up a local development environment with VSCode on your personal device for IB9JHO. 
+This is a guide to set up a local development environment with VSCode on your personal device for IB9JHO.
 
 ## Windows Packages
 
@@ -9,12 +9,14 @@ This is a guide to set up a local development environment with VSCode on your pe
 
 2. **Install Chocolatey Package Manager**
    - Copy the following command into PowerShell and press Enter:
+
      ```powershell
      Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
      ```
 
 3. **Install Required Packages**
    - In the terminal, run the following commands one by one:
+
      ```
      choco install git
      choco install visualstudio2022buildtools
@@ -30,12 +32,14 @@ This is a guide to set up a local development environment with VSCode on your pe
 1. **Open Terminal**
 2. **Install Homebrew Package Manager**
    - Copy the following command into the terminal and press Enter:
+
      ```bash
      /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
      ```
 
 3. **Install Required Packages**
    - In the terminal, run the following commands one by one:
+
      ```
      brew install git
      brew install llvm
